@@ -16,6 +16,7 @@ struct MainView: View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
+                .opacity(0.8)
             ScrollView {
                 VStack(alignment: .center, spacing: 40) {
                     HStack(alignment: .center, spacing: 120) {
@@ -23,7 +24,7 @@ struct MainView: View {
                             .font(.title.bold())
                         
                         Button {
-                            
+                            path.append(.SettingsView)
                         } label: {
                             Image(systemName: "gear")
                                 .font(.title)
@@ -35,6 +36,7 @@ struct MainView: View {
                         .buttonStyle(PlainButtonStyle())
                         
                     }
+                    
                     VStack(alignment: .leading, spacing: 20) {
                         Text("Today")
                             .font(.title2.bold())

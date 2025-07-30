@@ -25,7 +25,7 @@ struct DetailsView: View {
         ScrollView {
             VStack(spacing: 30) {
                 // Header
-                headerView
+                HeaderView()
                 Spacer()
                 // Image Carousel
                 imageCarousel

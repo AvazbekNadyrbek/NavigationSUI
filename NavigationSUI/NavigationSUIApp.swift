@@ -13,6 +13,7 @@ enum Page: Hashable {
     case Setting
     case ContentView
     case DetailsView
+    case SettingsView
 }
 
 @main
@@ -36,6 +37,8 @@ struct NavigationSUIApp: App {
                             ContentView(path: $path)
                         case .DetailsView:
                             DetailsView()
+                        case .SettingsView:
+                            SettingsView()
                         }
                     }
             }

@@ -52,6 +52,8 @@ struct CardView: View {
         .foregroundStyle(.white)
         .cornerRadius(20)
         .shadow(radius: 10)
+        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .contentShape(RoundedRectangle(cornerRadius: 16))
     }
 }
 
