@@ -24,7 +24,7 @@ struct SettingsView: View {
             }
         }
         // background fills the full safe area
-        .background(Color.black.ignoresSafeArea())
+        .background(Color.black.ignoresSafeArea().opacity(0.8))
         // hide any default nav bar if you're inside a NavigationStack
         .navigationBarHidden(true)
     }
